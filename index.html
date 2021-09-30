@@ -5,8 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BUSAN CITYHALL</title>
-  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
   <link type="text/css" rel="stylesheet" href="css/reset.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
   <div id="wrap">
@@ -26,18 +31,31 @@
       </div><!--.search-->
       </div><!--.inner-->
     </header>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/visual_top.png" alt="이미지에 대한 설명"></div>
+        <div class="swiper-slide pic02"><img src="img/slide01.png" alt="이미지에 대한 설명"></div>
+        <div class="swiper-slide">Slide 3</div>
+      
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
     <div class="visual">
-      <h2>오륙도 <br>스카이워크개장</h2>
-      <p>2021.06.01~2021.12.30</p>
+
+      <!-- <h2>오륙도 <br>스카이워크개장</h2>
+      <p>2021.06.01~2021.12.30</p> -->
+
     
-    <div class="paging">
+    <!-- <div class="paging">
       <ul>
         <li class="on"><a href="#">1</a></li>
         <li><a href="#">2</a></li>
         <li><a href="#">3</a></li>
         <li ><a href="#" >4</a></li>
         <li ><a href="#" class="last">4</a></li>
-      </ul>
+      </ul> -->
     </div><!--paging-->
   </div><!--visual-->
   <div class="contents">
@@ -141,5 +159,26 @@
    </div>
    <a href="#" class="top">Top</a>
   </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>

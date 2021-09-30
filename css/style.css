@@ -19,7 +19,46 @@ background-color: none; border:0}
 .search input:focus + button{background: url(../img/search01.png) no-repeat   2px; 
   height: 24px; width: 23px;}
 /* .search button:hover{background: url(../img/search01.png) no-repeat  center; height: 20px; width: 21px;} */
-.visual{width:100%; height: 685px; background: url(../img/visual_top.png) no-repeat center;background-size: cover;
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper{
+  height: 685px; width: 100%;
+}
+.swiper-slide.pic02{
+  transform: scale(1);
+}
+
+/* .visual{width:100%; height: 685px; background: url(../img/visual_top.png) no-repeat center;background-size: cover;
    background-color: #6796cf; text-align: center; position: relative;}
 .visual h2{font-size: 100px; color: #fff; padding: 160px 0 30px;}
 .visual p{font-size: 30px; color: #fff;  }
@@ -36,7 +75,7 @@ background-color: none; border:0}
 .visual .paging ul li.on a:hover{background-color: #1709a3;}
 
 .visual .paging ul li a.last{ display: block; width: 21px; height: 21px;
-  background: url(../img/stop_button.gif) no-repeat; }
+  background: url(../img/stop_button.gif) no-repeat; } */
 
 .contents{padding: 60px 0 100px; text-align: center;}
 
