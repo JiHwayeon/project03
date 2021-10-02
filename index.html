@@ -7,7 +7,7 @@
   <title>BUSAN CITYHALL</title>
   <link
   rel="stylesheet"
-  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  href="css/swiper-bundle.min.css"
 />
   <link type="text/css" rel="stylesheet" href="css/reset.css">
   <link type="text/css" rel="stylesheet" href="css/style.css">
@@ -33,6 +33,23 @@
     </header>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#" class="slidewrap">
+            <div class="video-wrapper mv_pc">
+              <video muted="" loop="" autoplay="" oncanplay="this.muted=true" id="bVideo_pc" width="100%" line-height="0">
+                 <source src="img/main_visual.mp4" type="video/mp4">
+              </video>
+              <div class="txtWrap06">
+                <h2><span>2030</span>
+                <br>BUSAN</h2>
+                <p>우리의 월드엑스포를 위하여</p>
+                <a href="#" class="more">자세히보기</a>
+              </div>
+           </div>
+           
+          </a>
+         
+        </div>
         <div class="swiper-slide pic02">
           
             <img src="img/Busan-1.jpg" alt="이미지에 대한 설명">
@@ -45,9 +62,10 @@
          
         
         </div>
+      
         <div class="swiper-slide">
           <a href="#" class="slidewrap">
-            <img src="img/visual_top.png" alt="이미지에 대한 설명">
+            <img src="img/gadukdo.png" alt="이미지에 대한 설명">
             <div class="txtWrap02">
               <h2>오륙도 <br>스카이워크개장</h2>
               <p>2021.06.01~2021.12.30</p>
@@ -66,24 +84,13 @@
                 <span>BUSAN</span>
   
               </div>
-              <div class="txtWrap04">
-                <p><img src="img/busan02.png" alt=""></p>
-               
-              </div>
+             
             </div>
           </a>
         
         
         </div>      
-        <div class="swiper-slide">
-          <a href="#" class="slidewrap">
-            <img src="img/c.jpg" alt="이미지에 대한 설명">
-           
-            
-          </a>
-        
-        
-        </div>   
+       
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -202,17 +209,15 @@
    </div>
    <a href="#" class="top">Top</a>
   </footer>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 0,
-      centeredSlides: true,
-      autoplay: {
-        delay: 4500,
-        disableOnInteraction: false,
-      },
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
