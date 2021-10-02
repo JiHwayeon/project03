@@ -241,18 +241,27 @@ margin-top: 30px;}
 .contents ul li:nth-child(6){background: url(../img/img_06.png) no-repeat center;}
 .contents ul li:nth-child(7){background: url(../img/img_07.png) no-repeat center;}
 .contents ul li:nth-child(8){background: url(../img/img_08.png) no-repeat center;}
-.contents ul li a{display: block; width: 255px;
-  height: 100%; background-color:rgba(255, 255, 255, 0);
+.contents ul li a{
+  display: block; width: 255px;
+  height: 100%; 
+  background-color:rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  padding: 120px 0;
  
    font-size: 19px; color: transparent;position: absolute; bottom: 0; left: 0;text-align: center; line-height: 55px; }
 .contents ul li:hover a{
  
   background: url(../img/border.png) no-repeat;
-  background-color: rgba(255, 255, 255, 0.7);
-   color: #4f5152; 
+  
+  background-color: rgba(255, 255, 255, 0.9);
+   color: #070707; 
 font-weight: bold;}
 
-.contents .more{display: block; background: url(../img/more.png) no-repeat center; width: 69px; height: 68px; color: transparent; font-size: 0; margin: 100px auto; }
+.contents .more{
+  display: block;
+   background: url(../img/more.png) no-repeat center;
+   background-size: 35px;
+    width: 69px; height: 68px; color: transparent; font-size: 0; margin: 100px auto; }
 
 aside{margin-bottom: 100px;}
 aside::after{content: ''; display: block; clear: both;}
@@ -376,3 +385,32 @@ text-align: center;line-height: 30px; }
 figure{float: left; margin-right: calc((100% - 858px) / 2); text-align: center; margin-bottom: 55px;}
 figure:last-child{margin-right: 0;}
 figcaption{margin-top: 30px;}
+
+ul.tabs > li{
+  background: none;
+  color: #222;
+  display: inline-block;
+  width: 30%;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 20px 25px;
+}
+
+
+ul.tabs > li.current{
+  background: #ededed;
+  color: #222;
+}
+
+
+.tab-content{
+  display: none;
+  
+ 
+}
+
+
+.tab-content.current{
+  display: inherit;
+}
+

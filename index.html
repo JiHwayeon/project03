@@ -80,18 +80,7 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
-    <div class="visual">
-
-    <!-- <div class="paging">
-      <ul>
-        <li class="on"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li ><a href="#" >4</a></li>
-        <li ><a href="#" class="last">4</a></li>
-      </ul> -->
-    </div><!--paging-->
-  </div><!--visual-->
+ 
   <div class="contents">
     <div class="inner">
       <h3>Busan News</h3>
@@ -139,17 +128,37 @@
   <aside>
     <div class="inner">
     <section class="a_left">
-      <p>
-        <span>지금 부산은</span><span>SNS</span>
-      </p> 
-        <a href="#" class="more">더보기</a>
-      
-      <ul class="list">
+
+   
+     
+     <ul class="tabs">
+        <li class="tab-link current" data-tab="tab-1">지금 부산은</li>
+        <li class="tab-link" data-tab="tab-2">SNS</li>    
+     </ul>      
+      <div id="tab-1" class="tab-content current">
+         <ul class="list">
         <li><a href="#"><strong>박형준 부산시장, 대한적십자 부산지명예회장으로 위촉</strong><span>2021.06.18</span></a></li>
         <li><a href="#"><strong>부산, 21일부터 2주간 영업제한시간 해제</strong><span>2021.06.18</span></a></li>
         <li><a href="#"><strong>부산시 코로나 19 일일 상황보고</strong><span>2021.06.21</span></a></li>
         <li><a href="#"><strong>라붐”상상더하기”와 함께 여름 여행은 부산</strong><span>2021.06.18</span></a></li>
       </ul>
+      </div>
+       <div id="tab-2" class="tab-content">
+         <ul class="list">
+        <li><a href="#"><strong>부산광역시 심뇌혈관질환 예방관리사업 지원단 운영 수탁기관 공개모집</strong><span>2021.10.01</span></a></li>
+        <li><a href="#"><strong>용역 입찰공고[부산광역시 건축자산 기초조사 및 진흥 시행계획 수립용역]</strong><span>2021.10.01</span></a></li>
+        <li><a href="#"><strong>2021 국제수산교류협력 지원사업 공고</strong><span>2021.10.01</span></a></li>
+        <li><a href="#"><strong>부산광역시 한솔어린이집 위탁운영자 선정 공고</strong><span>2021.10.01</span></a></li>
+      </ul>
+       </div>  
+  
+  
+      <!-- <p>
+        <span>지금 부산은</span><span>SNS</span>
+      </p>  -->
+        <a href="#" class="more">더보기</a>
+      
+     
       
     </section>
     <section class="a_right">
@@ -211,6 +220,16 @@
         prevEl: ".swiper-button-prev",
       },
     });
+    $('ul.tabs > li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs > li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	});
+ 
   </script>
 </body>
 </html>
