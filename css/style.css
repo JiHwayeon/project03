@@ -250,8 +250,8 @@ margin-top: 30px;}
   box-sizing: border-box;
   padding: 120px 0;
  
-   font-size: 29px; color: transparent
-  ;
+   font-size: 29px; color: transparent;
+  
    position: absolute; bottom: 0; left: 0;text-align: center; line-height: 55px; }
 .contents ul li:hover a{
    background: url(../img/border.png) no-repeat; 
