@@ -185,7 +185,9 @@ h2::before{
   border-top: 1px solid #fff;
   transform: translateY(-180px);
 }
-
+h2.subh::after{
+  content: none;
+}
 .swiper-slide .txtWrap06 p{
   color: #fff;
   font-size: 20px;
@@ -222,15 +224,15 @@ h2::before{
 margin-bottom: 50px;}
 .contents ul li .txt03{font-size: 17.27px; color: #4f5152; 
 margin-top: 30px;font-weight: bold;}
-.contents ul li .txt04{font-size: 16px; color: #4f5152; margin: 30px 0 ;
+.contents ul li .txt04{font-size: 16px; color: #4f5152; margin: 200px 0 0;
 font-weight: bold;}
-.contents ul li .txt05{font-size: 12px; color: #4f5152; font-weight: bold;margin-top: 150px;}
+.contents ul li .txt05{font-size: 12px; color: #4f5152; font-weight: bold;margin-top: 20px;}
 .contents ul li .txt06{font-size: 17.27px; color: #4f5152;margin-top: 30px; letter-spacing: -2px}
 .contents ul li p span{font-size: 5px; color:#0571e1 ;}
 .contents ul li .txt06 span{font-size: 30px; color: #000; font-weight: bold;
   letter-spacing: 0;}
 .contents ul li .txt07{font-size: 17.27px; color: #4f5152; font-weight: bold; 
-  margin: 30px 0 0 20px;text-align: left;}
+  margin: 210px 0 0 20px;text-align: left;}
 .contents ul li .txt08{font-size: 17.27px; color: #4f5152; font-weight: bold;
 margin-top: 30px;}
 .contents ul li:nth-child(2){background: url(../img/img_02.png) no-repeat center;}
@@ -248,14 +250,19 @@ margin-top: 30px;}
   box-sizing: border-box;
   padding: 120px 0;
  
-   font-size: 19px; color: transparent;position: absolute; bottom: 0; left: 0;text-align: center; line-height: 55px; }
+   font-size: 29px; color: transparent
+  ;
+   position: absolute; bottom: 0; left: 0;text-align: center; line-height: 55px; }
 .contents ul li:hover a{
- 
-  background: url(../img/border.png) no-repeat;
-  
+   background: url(../img/border.png) no-repeat; 
   background-color: rgba(255, 255, 255, 0.9);
-   color: #070707; 
+   color: rgb(79, 58, 138); 
 font-weight: bold;}
+.contents ul li a span{
+  display: block;
+  font-size: 15px;
+
+}
 
 .contents .more{
   display: block;
@@ -324,7 +331,7 @@ footer .top{
   font-size: 30px; text-align: center; 
   z-index: 99;
  }
- footer .top ul li a{
+ footer .top ul.f_top li a{
    display: block;
    width: 80px; height: 60px;
    background-color: #2011ee;
@@ -345,16 +352,16 @@ footer .top{
 
 
 /*sub */
-nav{background-color: #044181; height: 45px; padding: 10px;}
-nav ul::after{content: ''; display: block; clear: both;}
+.sub_nav{background-color: #044181; height: 45px; padding: 10px;}
+ .sub_nav ul::after{content: ''; display: block; clear: both;} 
 
-nav ul li{float: left;position: relative;}
-nav ul li::after{content: ''; display: block; width: 1px; height: 25px; background-color: #fff; position: absolute; top:10px; right: 0; }
+.sub_nav ul li{float: left;position: relative;}
+.sub_nav ul li::after{content: ''; display: block; width: 1px; height: 25px; background-color: #fff; position: absolute; top:10px; right: 0; }
 
-nav ul li a{font-size: 19px; color: #fff; font-weight: bold;line-height: 50px;
+.sub_nav ul li a{font-size: 19px; color: #fff; font-weight: bold;line-height: 50px;
 padding: 0 165px 0 50px; display: block;}
 
-nav ul li:first-child a{width: 28px; height: 28px; background: url(../img/home.png) no-repeat center ; color: transparent; font-size: 0; transform: translateY(7px);}
+.sub_nav ul li:first-child a{width: 28px; height: 28px; background: url(../img/home.png) no-repeat center ; color: transparent; font-size: 0; transform: translateY(7px);}
 
 /* 
 nav ul li:first-child a{display: block; width: 28px; height: 28px;padding: 0 20px 0 0;
