@@ -319,9 +319,30 @@ footer .f_txt01 li:last-child{margin-right: 0;}
 footer .f_txt01 .list a{font-size: 12px; text-decoration: underline; color: #0571e1;
 font-weight: bold;}
 footer .f_txt02 p{font-size: 12px; font-weight: bold;}
-footer .top{position: fixed; bottom:80px;right: 125px; display: block; width: 115px;
-height: 63px; background-color: #044181; font-size: 30px; text-align: center; 
-line-height: 63px; font-weight: bold; color: #fff;}
+footer .top{
+  position: fixed; bottom:50px;right: 0px; 
+  font-size: 30px; text-align: center; 
+  z-index: 99;
+ }
+ footer .top ul li a{
+   display: block;
+   width: 80px; height: 60px;
+   background-color: #2011ee;
+   color: #fff;
+    text-align: center;
+   border-bottom: 1px solid #fff;
+   padding: 7px 0;
+ }
+ footer .top ul li a span{
+   display: block;
+   font-size: 13px;
+   margin-top: 5px;
+ }
+ footer .top ul li a.last{
+   font-size: 13px;
+   border-bottom: 0;
+ }
+
 
 /*sub */
 nav{background-color: #044181; height: 45px; padding: 10px;}
